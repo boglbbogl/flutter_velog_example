@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_velog_example/_constant/theme.dart';
+import 'package:flutter_velog_example/state/sign_in_provider.dart';
+import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -40,7 +42,11 @@ class HomeScreen extends StatelessWidget {
                               const SizedBox(height: 20),
                               _buttonForm(
                                 title: 'Sign In With Google',
-                                onTap: () {},
+                                onTap: () {
+                                  context
+                                      .read<SignInProvider>()
+                                      .signInWithGoogle();
+                                },
                               ),
                             ],
                           ),
