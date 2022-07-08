@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_velog_example/_constant/theme.dart';
 import 'package:flutter_velog_example/state/sign_in_provider.dart';
+import 'package:flutter_velog_example/view/slider_screen.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -66,6 +67,26 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: InkWell(
+                onTap: () {
+                  Navigator.of(context).push(PageRouteBuilder(
+                      pageBuilder: (context, _, __) => SliderScreen()));
+                },
+                child: Container(
+                  color: Colors.amber,
+                  child: Padding(
+                    padding: const EdgeInsets.all(12),
+                    child: Text(
+                      'SLIDER',
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ),
         ],
       ),
