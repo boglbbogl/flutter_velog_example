@@ -92,7 +92,7 @@ class _SliderScreenState extends State<SliderScreen> {
                 ),
                 child: RangeSlider(
                     min: 0.0,
-                    max: 50000,
+                    max: 100000,
                     divisions: 100,
                     values: RangeValues(_min, _max),
                     onChanged: (v) {
@@ -108,12 +108,12 @@ class _SliderScreenState extends State<SliderScreen> {
                 child: SfRangeSlider(
                   showDividers: true,
                   min: 0.0,
-                  max: 50000.0,
-                  interval: 10000,
-                  stepSize: 10000,
+                  max: 100000.0,
                   values: SfRangeValues(_min, _max),
                   onChanged: (v) {
                     print(v);
+                    print((v.start / v.end) * 100);
+                    print((v.start - v.end));
                     setState(() {
                       _min = double.parse(v.start.toString());
                       _max = double.parse((v.end).toString());
