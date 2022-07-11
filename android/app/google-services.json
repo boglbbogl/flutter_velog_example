@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "555717292305",
+    "project_id": "flutter-velog-project",
+    "storage_bucket": "flutter-velog-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555717292305:android:4703ab57db7088cff6dcb0",
+        "android_client_info": {
+          "package_name": "com.example.flutter_velog_example"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555717292305-4h6hm4j7t9prd27edfsb3f1rit8uorkc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_velog_example",
+            "certificate_hash": "b5bee5983ff75355bb009518aeb4abb88e6c3d92"
+          }
+        },
+        {
+          "client_id": "555717292305-2o442jikqtd39ral22o2qa5rtp5ubt3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb3u_scBsiVFx-ptwkUo2-44z_nqK7nW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555717292305-2o442jikqtd39ral22o2qa5rtp5ubt3m.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "555717292305-kbpgqiqlggu18g1sp02ts4isguarvqcl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterVelogExample"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
